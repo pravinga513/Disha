@@ -22,7 +22,7 @@
     <nav>
         <a href="index.html">Introduction</a>
         <a href="Courses.html">Courses</a>
-        <a href="About.html">About</a>
+        <a href="about.html">About</a>
         <a href="certificate.html">Certificate</a>
         <a href="admission.html">Online Admission</a>
     </nav>
@@ -30,30 +30,42 @@
    
     <section id="enquiry-form">
         <h2>Enquiry Form</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+        <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
 
-            <label for="mobile">Mobile:</label>
-            <input type="text" id="mobile" name="mobile">
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment"></textarea>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment"></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit">Submit</button>
+    </form>
+<h2 style="text-align: center;display:none" id="1">Your Admission Form is Submited!</h2>
     </section>
+ <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the default form submission
 
+            // Display a message (you can replace this with any action you want)
+            alert("Form submitted! Thank you.");
+
+            // Toggle the visibility of the element with id "1"
+            var element = document.getElementById("1");
+            element.style.display =  "block";
+        });
+    </script>
     <footer>
         <p>&copy; 2024 all rights reserved.</p>
         <p>Corporate Office: B19, Krishnai Apartment, Sanghvi Nagar, Pune 411 007, Maharashtra, India</p>
         <p>Contact: 020 4601 1745 | Email: info@dishagroup.in</p>
         <p>Powered by Infisoft Technologies</p>
     </footer>
-
+<script>
 </body>
 
 </html>
