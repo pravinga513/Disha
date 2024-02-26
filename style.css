@@ -7,7 +7,11 @@
     justify-content: space-between;
     margin: 10px; /* Adjust margin as needed */
 }
-
+.image-container3{
+    display: flex;
+    justify-content: space-between;
+    margin:0 130px; /* Adjust margin as needed */
+}
 /* Responsive image styles */
 .responsive-image,
 .responsive-image2,
@@ -17,7 +21,13 @@
     height: auto;
     padding: 10px;
 }
-
+.responsive-image3{
+    max-width: 400px;
+    height: auto;
+    padding: 0px;
+ border: 6px solid #FFA500; /* Orange border */
+    border-radius: 9px;
+}
 .responsive-image2,
 .responsive-image22 {
     max-width: 300px;
@@ -125,7 +135,7 @@ button:hover {
 .image-item p {
     margin: 8px 0;
     font-size: 18px;
-    color: #fff;
+    color: #black;
     background-color: #FFA500; /* Orange background for image names */
     padding: 10px;
     border-radius: 10px;
