@@ -22,7 +22,7 @@
 .responsive-image22 {
     max-width: 300px;
     padding: 0px;
-    border: 6px solid black;
+    border: 6px solid #FFA500; /* Orange border */
     border-radius: 9px;
 }
 
@@ -43,7 +43,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Orange background */
     color: white;
     padding: 0.1em;
     background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEi9ZyQ_xYqRFDkCUwXGvU4hRgyYrtKo1_bbhih7u0R29EBt-G8_OJvEyYCZ38CyenjUcQ35j713aE_9qDtEIusjdh9OZKmic8tuO_IZhvG3iiwOmo5aKH0vuaRpwbM5j0deKWjZQgyipzdYveUj-_AsqYMgsCqZAWQHw_FG0a2N15wk2PqhoRUQg-fIsEU');
@@ -63,7 +63,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #FFA500; /* Orange color for navigation links */
     text-decoration: none;
     padding: 0.5em 1em;
 }
@@ -82,7 +82,7 @@ section {
 }
 
 section h2 {
-    color: #4CAF50;
+    color: #FFA500; /* Orange color for section headings */
 }
 
 form {
@@ -93,6 +93,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    color: #FFA500; /* Orange color for labels */
 }
 
 input,
@@ -104,7 +105,7 @@ textarea {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Orange background for buttons */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -112,7 +113,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #FF8C00; /* Darker shade of orange on hover */
 }
 
 /* New styles for image names */
@@ -125,7 +126,7 @@ button:hover {
     margin: 8px 0;
     font-size: 18px;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #FFA500; /* Orange background for image names */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
