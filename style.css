@@ -11,7 +11,7 @@
 .image-container3 {
     display: flex;
     justify-content: space-between;
-    margin: 0 10%; /* Adjust margin as needed */
+    margin: 0 5%; /* Adjust margin as needed */
 }
 
 /* Responsive image styles */
@@ -34,7 +34,7 @@
 
 .responsive-image2,
 .responsive-image22 {
-    max-width: 60%; /* Adjust maximum width for responsiveness */
+    max-width: 100%; /* Adjust maximum width for responsiveness */
     padding: 0;
     border: 6px solid #FFA500; /* Orange border */
     border-radius: 9px;
@@ -48,6 +48,19 @@
     .image-container22 {
         flex-direction: column; /* Stack images vertically on smaller screens */
     }
+    nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0em;
+}
+
+nav a {
+    color: #FFA500; /* Orange color for navigation links */
+    text-decoration: none;
+    padding: 0em 0em;
+    font-size: 12px;
+}
 }
 
 /* Common styles for body and header */
@@ -55,6 +68,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 header {
@@ -83,7 +97,15 @@ nav a {
     text-decoration: none;
     padding: 0.5em 1em;
 }
-
+.D{
+  font-size:80px;
+  font-family: 'Arial Black'
+  }
+  .C{
+    margin: px;
+  font-size: 30px}
+  .E{margin: 34px; 
+  font-size: 20px"}
 footer {
     text-align: center;
     padding: 1em;
