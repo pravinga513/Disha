@@ -57,6 +57,8 @@
                 <option value="digitalMarketing">Digital Marketing</option>
                 <!-- Add more options as needed -->
         </select>
+            <label for="fees">Fees:</label>
+            <input type="text" id="fees" name="fees" readonly>
         <label for="comment">Comment:</label>
         <textarea id="comment" name="comment"></textarea>
 
@@ -65,6 +67,17 @@
 <h2 style="text-align: center;display:none" id="1">Your Admission Form is Submited!</h2>
     </section>
  <script>
+     function calculateFees() {
+            var courseSelect = document.getElementById("courseSelection");
+            var feesInput = document.getElementById("fees");
+
+            // Get the selected option and its data-fees attribute
+            var selectedOption = courseSelect.options[courseSelect.selectedIndex];
+            var fees = selectedOption.getAttribute("data-fees");
+
+            // Display the fees in the read-only input
+            feesInput.value = fees ? "Fees: $" + fees : "";
+     }
         document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevents the default form submission
 
