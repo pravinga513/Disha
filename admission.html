@@ -41,22 +41,23 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="name">Course:</label>
-        <select id="courseSelection" name="Select Course" required>
-                <option value="" disabled selected>Select a course</option>
-                <option value="hardwareNetworking">Hardware & Networking</option>
-                <option value="caa">CAA</option>
-                <option value="dcga">DCGA</option>
-                <option value="graphicDesigning">Graphic Designing</option>
-                <option value="animation">Animation</option>
-                <option value="architecture">Architecture</option>
-                <option value="googleSketchUp">Google SketchUp</option>
-                <option value="webDesigning">Web Designing</option>
-                <option value="adsp">ADSP</option>
-                <option value="programming">Programming</option>
-                <option value="softwareProgramming">Software Programming</option>
-                <option value="digitalMarketing">Digital Marketing</option>
-                <!-- Add more options as needed -->
-        </select>
+        <select id="courseSelection" name="Select Course" required onchange="calculateFees()">
+    <option value="" disabled selected>Select a course</option>
+    <option value="hardwareNetworking" data-fees="5000">Hardware & Networking - $5000</option>
+    <option value="caa" data-fees="6000">CAA - $6000</option>
+    <option value="dcga" data-fees="5500">DCGA - $5500</option>
+    <option value="graphicDesigning" data-fees="7000">Graphic Designing - $7000</option>
+    <option value="animation" data-fees="6500">Animation - $6500</option>
+    <option value="architecture" data-fees="7500">Architecture - $7500</option>
+    <option value="googleSketchUp" data-fees="8000">Google SketchUp - $8000</option>
+    <option value="webDesigning" data-fees="7000">Web Designing - $7000</option>
+    <option value="adsp" data-fees="6000">ADSP - $6000</option>
+    <option value="programming" data-fees="6500">Programming - $6500</option>
+    <option value="softwareProgramming" data-fees="7000">Software Programming - $7000</option>
+    <option value="digitalMarketing" data-fees="7500">Digital Marketing - $7500</option>
+    <!-- Add more options as needed -->
+</select>
+
             <label for="fees">Fees:</label>
             <input type="text" id="fees" name="fees" readonly>
         <label for="comment">Comment:</label>
