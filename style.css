@@ -1,5 +1,5 @@
 /* Common styles for image containers */
-#fees{background-color: #f8f8f8;}
+#fees{background-color:  gray;}
 
 
 .image-container,
@@ -23,7 +23,7 @@ max-width: 100%;
 .responsive-image2,
 .responsive-image3,
 .responsive-image22 {
-    max-width: 100%; /* Adjust maximum width for responsiveness */
+    max-width: 60%; /* Adjust maximum width for responsiveness */
     height: auto;
     padding: 10px;
 }
