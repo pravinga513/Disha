@@ -32,7 +32,8 @@
     <section id="enquiry-form">
         <h2>Enquiry Form</h2>
         <form id="myForm" method="post" action="" name="contact-form">
-        <label for="name">Name:</label>
+<input style="display:none" type="text" id="date" name="date" value="">        
+<label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="mobile">Mobile:</label>
@@ -68,6 +69,14 @@
 <h2 style="text-align: center;display:none" id="1">Your Admission Form is Submitting...</h2>
     </section>
  <script>
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+var d =today = yyyy + '-' + mm + '-' + dd;
+document.getElementById("date").value = d;
+
  const scriptURL = 'https://script.google.com/macros/s/AKfycbx6Q4uh_3P2u2sxWP7_yVzVqFCIrr8N_eEoAt0gXQUXSQ5oEfVta2qmduoHNwoEmvnNQQ/exec'
 
 const form = document.forms['contact-form']
@@ -101,7 +110,7 @@ form.addEventListener('submit', e => {
             event.preventDefault(); // Prevents the default form submission
 
             // Display a message (you can replace this with any action you want)
-            alert("Form submitted! Thank you.");
+            alert("Form is Submitting..");
 
             // Toggle the visibility of the element with id "1"
             var element = document.getElementById("1");
