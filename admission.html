@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+y>
+
+</html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,7 +34,7 @@
    
     <section id="enquiry-form">
         <h2>Enquiry Form</h2>
-        <form id="myForm">
+        <form id="myForm" method="post" action="" name="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -41,7 +44,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="name">Course:</label>
-        <select id="courseSelection" name="Select Course" required onchange="calculateFees()">
+        <select id="courseSelection" name="Select-Course" required onchange="calculateFees()">
     <option value="" disabled selected>Select a course</option>
     <option value="hardwareNetworking" data-fees="5000">Hardware & Networking </option>
     <option value="caa" data-fees="6000">CAA </option>
@@ -68,6 +71,24 @@
 <h2 style="text-align: center;display:none" id="1">Your Admission Form is Submited!</h2>
     </section>
  <script>
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbx6Q4uh_3P2u2sxWP7_yVzVqFCIrr8N_eEoAt0gXQUXSQ5oEfVta2qmduoHNwoEmvnNQQ/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+
+  e.preventDefault()
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+
+  .then(() => { window.location.reload(); })
+
+  .catch(error => console.error('Error!', error.message))
+
+})
+
      function calculateFees() {
             var courseSelect = document.getElementById("courseSelection");
             var feesInput = document.getElementById("fees");
@@ -99,4 +120,5 @@
 <script>
 </body>
 
-</html>
+    </html>
+    
