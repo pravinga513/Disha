@@ -98,7 +98,7 @@ form.addEventListener('submit', e => {
             var fees = selectedOption.getAttribute("data-fees");
 
             // Display the fees in the read-only input
-            feesInput.value = fees ? "Fees: ₹ " + fees : "";
+            feesInput.value = fees ? "₹ " + fees : "";
      }
         document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevents the default form submission
