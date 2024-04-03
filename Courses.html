@@ -27,7 +27,6 @@
         <a href="About.html">About</a>
         <a href="certificate.html">Certificate</a>
         <a href="admission.html">Admission</a>
-   <a href="Login.html">Admin Login</a>
     </nav>
 
  
@@ -36,60 +35,64 @@
     <!-- Your image content goes here -->
     <div class="image-container2">
         <div class="image-item">
-            <img class="responsive-image2" src="img1.jpg" alt="Image 1">
-            <p><b>Hardware & Networking</b></p>
+            <img class="responsive-image2 thumbnail" src="img1.jpg" onclick="enlargeImage('img1.jpg')" alt="Image 1">
+            <p class="thumbnail" onclick="enlargeImage('img1.jpg')"><b>Hardware & Networking</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img2.jpg" alt="Image 2">
-            <p><b>CAA</b></p>
+            <img class="responsive-image2 thumbnail" src="img2.jpg" onclick="enlargeImage('img2.jpg')" alt="Image 2">
+            <p class="thumbnail" onclick="enlargeImage('img2.jpg')"><b>CAA</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img3.jpg" alt="Image 3">
-            <p><b>DCGA</b></p>
+            <img class="responsive-image2 thumbnail" src="img3.jpg" onclick="enlargeImage('img3.jpg')" alt="Image 3">
+            <p class="thumbnail" onclick="enlargeImage('img3.jpg')"><b>DCGA</b></p>
         </div>
     </div>
     <div class="image-container22">
         <div class="image-item">
-            <img class="responsive-image2" src="img4.jpg" alt="Image 4">
-            <p><b>Graphic Designing</b></p>
+            <img class="responsive-image2 thumbnail" src="img4.jpg" onclick="enlargeImage('img4.jpg')" alt="Image 4">
+            <p class="thumbnail" onclick="enlargeImage('img4.jpg')"><b>Graphic Designing</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img5.jpg" alt="Image 5">
-            <p><b>Animation</b></p>
+            <img class="responsive-image2 thumbnail"  src="img5.jpg" onclick="enlargeImage('img5.jpg')" alt="Image 5">
+            <p class="thumbnail" onclick="enlargeImage('img5.jpg')"><b>Animation</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img6.jpg" alt="Image 6">
-            <p><b>Architectur</b></p>
+            <img class="responsive-image2 thumbnail" src="img6.jpg" onclick="enlargeImage('img6.jpg')" alt="Image 6">
+            <p class="thumbnail" onclick="enlargeImage('img6.jpg')"><b>Architectur</b></p>
         </div>
     </div>
 <div class="image-container22">
         <div class="image-item">
-            <img class="responsive-image2" src="img7.jpg" alt="Image 4">
-            <p><b>Google SketchUp</b></p>
+            <img class="responsive-image2 thumbnail" src="img7.jpg" onclick="enlargeImage('img7.jpg')"alt="Image 4">
+            <p class="thumbnail" onclick="enlargeImage('img7.jpg')"><b>Google SketchUp</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img8.jpg" alt="Image 5">
-            <p><b>Web Designing</b></p>
+            <img class="responsive-image2 thumbnail" src="img8.jpg" onclick="enlargeImage('img8.jpg')" alt="Image 5">
+            <p class="thumbnail" onclick="enlargeImage('img8.jpg')"><b>Web Designing</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img9.jpg" alt="Image 6">
-            <p><b>ADSP</b></p>
+            <img class="responsive-image2 thumbnail" src="img9.jpg" onclick="enlargeImage('img9.jpg')" alt="Image 6">
+            <p class="thumbnail" onclick="enlargeImage('img9.jpg')"><b>ADSP</b></p>
         </div>
     </div>
 <div class="image-container22">
         <div class="image-item">
-            <img class="responsive-image2" src="img10.jpg" alt="Image 4">
-            <p><b>Programming</b></p>
+            <img class="responsive-image2 thumbnail" src="img10.jpg" onclick="enlargeImage('img10.jpg')" alt="Image 4">
+            <p class="thumbnail" onclick="enlargeImage('img10.jpg')"><b>Programming</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img11.jpg" alt="Image 5">
-            <p><b>Software Programming</b></p>
+            <img class="responsive-image2 thumbnail" src="img11.jpg" onclick="enlargeImage('img11.jpg')" alt="Image 5">
+            <p class="thumbnail" onclick="enlargeImage('img11.jpg')"><b>Software Programming</b></p>
         </div>
         <div class="image-item">
-            <img class="responsive-image2" src="img12.jpg" alt="Image 6">
-            <p><b>Digital Marketing</b></p>
+            <img class="responsive-image2 thumbnail" src="img12.jpg" onclick="enlargeImage('img12.jpg')" alt="Image 6">
+            <p class="thumbnail" onclick="enlargeImage('img12.jpg')"><b>Digital Marketing</b></p>
         </div>
     </div>
+	<div id="enlarged-container">
+  <span class="close-btn" onclick="closeEnlarged()">&times;</span>
+  <img id="enlarged-image" onclick="closeEnlarged()" alt="">
+</div>
 </section>
 
 
@@ -99,6 +102,18 @@
         <p>Contact: 020 4601 1745 | Email: info@dishagroup.in</p>
         <p>Powered by Infisoft Technologies</p>
     </footer>
+	
+<script>
+  function enlargeImage(src) {
+    var enlargedImg = document.getElementById('enlarged-image');
+    enlargedImg.src = src;
+    document.getElementById('enlarged-container').style.display = 'block';
+  }
+
+  function closeEnlarged() {
+    document.getElementById('enlarged-container').style.display = 'none';
+  }
+</script>
 
 </body>
 
